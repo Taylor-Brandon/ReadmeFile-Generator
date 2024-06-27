@@ -1,13 +1,28 @@
-// TODO: Include packages needed for this application
+function writeToFile({title, description, tableOfContents, installation, usage, license, contributing, test, questions}) {
+    `# ${title}
 
-// TODO: Create an array of questions for user input
-const questions = [];
+    ## Description
+    ${description}
+    
+    ## Table of Contents
+    ${tableOfContents}
+    
+    ## Installtion
+    ${installation}
+    
+    ## Usage
+    ${usage}
+    
+    ## License
+    ${license}
+    
+    ## Contributing
+    ${contributing}
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
+    ## Tests
+    ${test}
+    
+    ## Questions
+    ${questions}
+    `;
+}
