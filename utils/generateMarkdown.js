@@ -49,4 +49,11 @@ function generateMarkdown(data) {
     return `${badge}\n${link}\n${section}`;
 }
 
+function generateBadge(data) {
+    const badge = renderLicenseBadge(data.license)
+
+    return `${badge}`
+}
+
 module.exports = generateMarkdown;
+module.exports = generateBadge;

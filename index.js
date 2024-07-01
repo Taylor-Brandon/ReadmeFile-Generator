@@ -1,11 +1,17 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
+const generateBadge = require('./utils/generateMarkdown');
 
 function writeToFile(data) {
     const licenseSection = generateMarkdown(data);
+    const badgeSection = generateBadge(data)
+    
 
     return `# ${data.title}
+
+    ${badgeSection}
+
 
 ## Description
 ${data.description}
@@ -53,11 +59,6 @@ inquirer
             type: 'input',
             message: 'Please provide a brief description of your project.',
             name: 'description',
-        },
-        {
-            type: 'input',
-            message: 'Please provide a table of contents for your project.',
-            name: 'tableOfContents',
         },
         {
             type: 'input',
