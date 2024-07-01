@@ -11,7 +11,14 @@ function writeToFile(data) {
 ${data.description}
 
 ## Table of Contents
-${data.tableOfContents}
+[Description](#Description)
+[Installation](#Installation)
+[Usage](#Usage)
+[License](#License)
+[Contributions](#Contributions)
+[Tests](#Tests)
+[Questions](#Questions)
+
 
 ## Installation
 ${data.installation}
