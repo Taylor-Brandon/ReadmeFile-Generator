@@ -30,6 +30,7 @@ ${data.testing}
 
 ## Questions
 ${data.questions}
+Github: [!${data.github}](https://github.com/${data.github})
     `;
 }
 
@@ -80,6 +81,11 @@ inquirer
             type: 'input',
             message: 'Please describe how users are able to submit any questions regarding the project.',
             name: 'questions',
+        },
+        {
+            type: 'input',
+            message: 'Please provide your github username.',
+            name: 'github',
         },
     ])
     .then((answers) => {
