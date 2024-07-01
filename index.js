@@ -1,11 +1,17 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
+const generateBadge = require('./utils/generateMarkdown');
 
 function writeToFile(data) {
     const licenseSection = generateMarkdown(data);
+    const badgeSection = generateBadge(data)
+    
 
     return `# ${data.title}
+
+    ${badgeSection}
+
 
 ## Description
 ${data.description}
