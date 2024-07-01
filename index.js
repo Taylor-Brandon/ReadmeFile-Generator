@@ -56,11 +56,6 @@ inquirer
         },
         {
             type: 'input',
-            message: 'Please provide a table of contents for your project.',
-            name: 'tableOfContents',
-        },
-        {
-            type: 'input',
             message: 'Please provide a description of the installation process for this project.',
             name: 'installation',
         },
