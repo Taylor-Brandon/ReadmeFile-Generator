@@ -7,13 +7,13 @@
 This project enables developers to efficiently and quickly produce a professional README.md file using Node.js. It is designed for developers with a fast-paced workday or those who need a structured outline to follow.
 
 ## Table of Contents
-[Description](#Description)
-[Installation](#Installation)
-[Usage](#Usage)
-[License](#License)
-[Contributions](#Contributions)
-[Tests](#Tests)
-[Questions](#Questions)
+*  [Description](#Description)
+*  [Installation](#Installation)
+* [Usage](#Usage)
+* [License](#License)
+* [Contributions](#Contributions)
+* [Tests](#Tests)
+* [Questions](#Questions)
 
 
 ## Installation
@@ -39,6 +39,6 @@ Special thanks to Columbia Bootcamps for providing the educational resources nec
 ## Questions
 For any questions, feel free to contact me via email or submit an issue on GitHub.
 
-Github: [!Taylor-Brandon](https://github.com/Taylor-Brandon)
-Email: !taylor.brandon22545@gmail.com](mailto:taylor.brandon22545@gmail.com)
+Github: [Taylor-Brandon](https://github.com/Taylor-Brandon)
+Email: [taylor.brandon22545@gmail.com](mailto:taylor.brandon22545@gmail.com)
     
