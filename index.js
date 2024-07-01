@@ -38,6 +38,7 @@ ${data.testing}
 ## Questions
 ${data.questions}
 Github: [!${data.github}](https://github.com/${data.github})
+Email: !${data.email}](mailto:${data.email})
     `;
 }
 
@@ -93,6 +94,11 @@ inquirer
             type: 'input',
             message: 'Please provide your github username.',
             name: 'github',
+        },
+        {
+            type: 'input',
+            message: 'Please enter your email.',
+            name: 'email'
         },
     ])
     .then((answers) => {
