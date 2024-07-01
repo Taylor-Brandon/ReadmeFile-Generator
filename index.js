@@ -1,32 +1,35 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown');
 
-function writeToFile({title, description, tableOfContents, installation, usage, license, contributions, testing, questions}) {
-    return `# ${title}
+function writeToFile(data) {
+    const licenseSection = generateMarkdown(data);
+
+    return `# ${data.title}
 
 ## Description
-${description}
+${data.description}
 
 ## Table of Contents
-${tableOfContents}
+${data.tableOfContents}
 
 ## Installation
-${installation}
+${data.installation}
 
 ## Usage
-${usage}
+${data.usage}
 
 ## License
-${license}
+${licenseSection}
 
 ## Contributions
-${contributions}
+${data.contributions}
 
 ## Tests
-${testing}
+${data.testing}
 
 ## Questions
-${questions}
+${data.questions}
     `;
 }
 
@@ -44,7 +47,7 @@ inquirer
         },
         {
             type: 'input',
-            message: 'Please provide a table of content for your project',
+            message: 'Please provide a table of contents for your project.',
             name: 'tableOfContents',
         },
         {
@@ -54,18 +57,18 @@ inquirer
         },
         {
             type: 'input',
-            message: 'Please describe the usage of this project',
+            message: 'Please describe the usage of this project.',
             name: 'usage',
         },
         {
             type: 'list',
             message: 'Please choose a license for the project.',
             name: 'license',
-            choices: ["MIT", "ISC", "Apache License 2.0"],
+            choices: ["MIT", "ISC", "Apache 2.0", "None"],
         },
         {
             type: 'input',
-            message: 'Please describe any contributions towards the production of this project',
+            message: 'Please describe any contributions towards the production of this project.',
             name: 'contributions',
         },
         {
