@@ -10,7 +10,7 @@ function writeToFile(data) {
 
     return `# ${data.title}
 
-    ${badgeSection}
+${badgeSection}
 
 
 ## Description
